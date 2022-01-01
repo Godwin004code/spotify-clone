@@ -1,0 +1,62 @@
+:root {
+    --text-base: #202f72;
+    --hover-color: #1ed760;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.signup::before {
+    content: "";
+    border-left: 2px solid white;
+}
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0 .5rem;
+    transition: all ease .5s;
+}
+.nav-links:hover {
+    color: #1ed760;
+}
+#logo {
+    display: none;
+}
+.line {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .large {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .signup, .login {
+        font-size: 1.4rem;
+    }
+    ul {
+        padding-left: 2rem;
+    }
+    .line {
+        margin: 1rem 0 1rem .5rem;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: white;
+    }
+    li {
+        margin: 1rem 0;
+    }
+    .signup::before {
+        content: "";
+        border-left: 0;
+    }
+    #logo {
+        font-size: 1.4rem;
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        color: white;
+    }
+}

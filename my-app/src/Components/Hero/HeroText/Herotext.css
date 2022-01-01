@@ -1,0 +1,67 @@
+:root {
+    --text-base: #202f72;
+    --hover-color: #1ed760;
+}
+.hero-text {
+    width: 100%;
+}
+
+
+.first-text,.second-text, .third-text {
+    width: 100%;
+    margin: 0 auto;
+    
+    background-color: #a3ffec;
+    color: var(--text-base);
+    height: 85vh;
+    padding: 9rem 0 0 0;
+}
+.first-text {
+    height: 100vh;
+}
+.second-text {
+    padding: 4rem 0 ;
+    background: #fd50ff;
+}
+.second-text #listen {
+    padding-top: 4rem;
+}
+.third-text {
+    padding: 4rem 0;
+    color: var(--hover-color);
+    background: var(--text-base);
+}
+.third-text .text button {
+    margin-top: 2rem;
+}
+.first-text .text, .second-text .text, .third-text .text {
+    width: 90%;
+    margin: 0 auto;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding-bottom: 2rem;
+}
+button {
+    padding: 1rem 2.3rem;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+}
+.para-1 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .second-text, .third-text {
+        height: 80vh;
+    }
+    .first-text {
+        padding-top: 6rem;
+    }
+}
